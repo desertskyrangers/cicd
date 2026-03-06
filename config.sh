@@ -14,7 +14,7 @@ case "${GITHUB_REF}" in
   "refs/heads/main") ACM_RELEASE="latest" ;;
   "refs/heads/stable") ACM_RELEASE="stable" ;;
 esac
-export PRODUCT_DEPLOY_PATH=/opt/acm/repo/${ACM_RELEASE}/${ACM_PRODUCT}
+export PRODUCT_DEPLOY_PATH=/opt/dsr/repo/${ACM_RELEASE}/${ACM_PRODUCT}
 
 echo "Build date=$(date)"
 echo "GITHUB_REF=${GITHUB_REF}"
